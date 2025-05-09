@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AgroInfo - Get Soil & Seed Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-success">
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">AgroInfo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<h1 class="text-white text-center mt-4">Get Seed and Soil Recommendations</h1>
+<form action="info" method="post" class="text-white px-4">
+    Name: <input type="text" name="name" required><br><br>
+    Contact Number: <input type="text" name="contact" required><br><br>
+    Email ID: <input type="text" name="email" required><br><br>
+    Region: <input type="text" name="region" required><br><br>
+    Soil Type: <input type="text" name="soil" required><br><br>
+    Crop Type: <input type="text" name="crop" required><br><br>
+    Number of Acres: <input type="number" name="acres" step="any" required><br><br>
+    <button type="submit" class="btn btn-warning">Get Info</button>
+</form>
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    Ruchitha Gowda @copy 2025
+</footer>
+</body>
+</html>
